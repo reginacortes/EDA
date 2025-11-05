@@ -1,6 +1,8 @@
 # EDA
 
 ## Práctica 4: Programación Dinámica
+Equipo: Regina Cortes, Mely Delado, Layla Bonilla
+
 
 ### Problema
 
