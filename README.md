@@ -34,4 +34,4 @@ Se creo un método que genera de forma aleatoria dos archivos diferentes de cada
 
 La versión iterativa:  (Regina)
 Utiliza una matriz d[i][j] que representa el número mínimo de operaciones necesarias para transformar los primeros i caracteres de Sn en los primeros j caracteres de Sn+1. En el método se va considerando el costo de insertar y reemplazar cada caracter. 
-La complejidad seria Tiempo: O(m x n). 
+La complejidad seria Tiempo: O(m x n). También se mide el tiempo en el que se tarda en ejecutar el método dependiendo de la longitud del archivo de texto con el que se trabaja.
