@@ -14,7 +14,7 @@ Los archivos estan en formato de texto plano UTF-8. Cada archivo tiene una longi
 Salida: 
   - Una lınea de texto que indique el numero de caracteres del documento A y del documento B
   - La distancia de edicion entre los documentos D(A, B) y D(B, A)
-  - El tiempo utilizado para el c ́alculo de la distancia de edicion
+  - El tiempo utilizado para el calculo de la distancia de edicion
   - Si el tiempo para resolver el problema excede 10 segundos, muestre el mensaje ”tiempo lımite para resolver el problema excedido”
 
 
@@ -26,3 +26,6 @@ Una version iterativa con programacion dinamica
 Se presentan graficas de desempeño de las tres versiones para las siguientes longitudes maximas de los textos: [5, 50, 500, 5000, 50000]
 
 
+### Metodología
+
+Se creo un método que genera de forma aleatoria dos archivos diferentes de cada una de las siguientes longitudes de texto: [5, 50, 500, 5000, 50000] para que sean comparados en los siguientes metodos. Se agregan saltos de línea de vez en cuando para que parezca un archivo de texto real. Estos archivos pueden ser descargados directamente de la clase y son los mismos que se pueden utilizar para implementar los metodos siguientes.
