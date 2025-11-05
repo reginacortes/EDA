@@ -32,6 +32,6 @@ Se presentan graficas de desempeño de las tres versiones para las siguientes lo
 
 Se creo un método que genera de forma aleatoria dos archivos diferentes de cada una de las siguientes longitudes de texto: [5, 50, 500, 5000, 50000] para que sean comparados en los siguientes metodos. Se agregan saltos de línea de vez en cuando para que parezca un archivo de texto real. Estos archivos pueden ser descargados directamente de la clase y son los mismos que se pueden utilizar para implementar los metodos siguientes.
 
-La versión iterativa:
+La versión iterativa:  (Regina)
 Utiliza una matriz d[i][j] que representa el número mínimo de operaciones necesarias para transformar los primeros i caracteres de Sn en los primeros j caracteres de Sn+1. En el método se va considerando el costo de insertar y reemplazar cada caracter. 
 La complejidad seria Tiempo: O(m x n). 
