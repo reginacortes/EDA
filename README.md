@@ -40,3 +40,4 @@ La complejidad seria Tiempo: O(m x n). También se mide el tiempo en el que se t
 
 Gráfica - Método Iterativo
 
+<img width="600" height="371" alt="Versión Iterativa_ Distancia de Edición  and Tiempo" src="https://github.com/user-attachments/assets/8f4c852c-8a17-408e-866c-0a97d8016393" />
