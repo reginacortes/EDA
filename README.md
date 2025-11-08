@@ -36,6 +36,9 @@ La versión iterativa:  (Regina)
 Utiliza una matriz d[i][j] que representa el número mínimo de operaciones necesarias para transformar los primeros i caracteres de Sn en los primeros j caracteres de Sn+1. En el método se va considerando el costo de insertar y reemplazar cada caracter. 
 La complejidad seria Tiempo: O(m x n). También se mide el tiempo en el que se tarda en ejecutar el método dependiendo de la longitud del archivo de texto con el que se trabaja.
 
+Versión con Memoización: 
+Esta versión evita recalcular las mismas combinaciones de subcadenas una y otra vez, lo cual reduce el tiempo de ejecución drásticamente, utiliza una tabla de tamaño (m+1)(n+1) en la cual se almacenan los datos del calculo de una sola vez de distancia.
+
 ### Resultados
 
 Gráfica - Método Iterativo
