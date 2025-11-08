@@ -50,7 +50,7 @@ public class MainDE {
         // Versión recursiva con memoización
         System.out.println("\n--- Versión recursiva con memoización ---");
         inicio = System.nanoTime();
-        int dist2 = DistanciaEdición.memoizacion(A, B);
+        int dist2 = DistanciaEdiciónMemoizacion.memoizacion(A, B);
         long fin = System.nanoTime();
         double tiempo2 = (fin - inicio) / 1_000_000_000.0;
         System.out.printf("D(A,B) = %d, D(B,A) = %d, Tiempo = %.4f s%n", dist2, dist2, tiempo2);
@@ -60,7 +60,7 @@ public class MainDE {
         // Versión iterativa con programación dinámica
         System.out.println("\n--- Versión iterativa con programación dinámica ---");
         inicio = System.nanoTime();
-        int dist3 = DistanciaEdición.ProgDin(A, B);
+        int dist3 = DistanciaEdiciónMemoizacion.ProgDin(A, B);
         fin = System.nanoTime();
         double tiempo3 = (fin - inicio) / 1_000_000_000.0;
         System.out.printf("D(A,B) = %d, D(B,A) = %d, Tiempo = %.4f s%n", dist3, dist3, tiempo3);
@@ -74,15 +74,15 @@ public class MainDE {
     }
 
     private static int rec(String A, String B, int i, int j) {
-        if (i == 0) return j * DistanciaEdición.delta;
-        if (j == 0) return i * DistanciaEdición.delta;
+        if (i == 0) return j * DistanciaEdiciónMemoizacion.delta;
+        if (j == 0) return i * DistanciaEdiciónMemoizacion.delta;
 
         if (A.charAt(i - 1) == B.charAt(j - 1))
             return rec(A, B, i - 1, j - 1);
 
-        int insercion = rec(A, B, i, j - 1) + DistanciaEdición.delta;
-        int eliminacion = rec(A, B, i - 1, j) + DistanciaEdición.delta;
-        int reemplazo = rec(A, B, i - 1, j - 1) + DistanciaEdición.alfa;
+        int insercion = rec(A, B, i, j - 1) + DistanciaEdiciónMemoizacion.delta;
+        int eliminacion = rec(A, B, i - 1, j) + DistanciaEdiciónMemoizacion.delta;
+        int reemplazo = rec(A, B, i - 1, j - 1) + DistanciaEdiciónMemoizacion.alfa;
 
         return Math.min(insercion, Math.min(eliminacion, reemplazo));
     }
