@@ -85,4 +85,7 @@ suma de las cantidades de los dos nodos que estamos procesando. En la rama derec
 izquierda. Luego insertamos en la lista al nuevo nodo (raíz) respetando el criterio de ordenamiento que mencionamos más arriba. Si en la lista existe un nodo con la misma cantidad de ocurrencias (que en este caso es 2), la inserción la haremos a continuación de este. 
 
 Luego continuamos con este proceso hasta que la lista se haya convertido en un árbol binario cuyo nodo raíz tenga una cantidad de ocurrencias igual al tamaño del archivo que
-queremos comprimir
+queremos comprimir.
+
+El siguiente paso será asignar un código Huffman a cada uno de los caracteres reales que se encuentran ubicados en las hojas del árbol. Para esto, consideraremos el camino
+que se debe recorrer para llegar a cada hoja. El código se forma concatenando un 0 por cada tramo que avanzamos hacia la izquierda y un 1 cada vez que avanzamos hacia la derecha.
