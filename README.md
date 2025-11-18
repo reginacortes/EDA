@@ -47,3 +47,19 @@ Versión con Programación Dinámica:
 Gráfica - Método Iterativo
 
 <img width="600" height="371" alt="Versión Iterativa_ Distancia de Edición  and Tiempo" src="https://github.com/user-attachments/assets/8f4c852c-8a17-408e-866c-0a97d8016393" />
+
+
+
+# Algoritmos Codiciosos
+
+## Práctica 5: Algoritmos Codiciosos
+Equipo: Regina Cortes, Mely Delado, Layla Bonilla
+
+### Problema
+
+Se te encarga desarrollar un algoritmo para comprimir textos alfanum ́ericos de hasta 5000 caracteres para guardarlos en un campo de una base de datos y recuperarlos en forma simple y
+eficiente. Te acuerdas que el algoritmo de Huffman genera un c ́odigo que es muy eficiente y decides implementarlo para este proposito.
+
+
+
+
