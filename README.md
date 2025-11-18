@@ -57,9 +57,21 @@ Equipo: Regina Cortes, Mely Delado, Layla Bonilla
 
 ### Problema
 
-Se te encarga desarrollar un algoritmo para comprimir textos alfanum ́ericos de hasta 5000 caracteres para guardarlos en un campo de una base de datos y recuperarlos en forma simple y
-eficiente. Te acuerdas que el algoritmo de Huffman genera un c ́odigo que es muy eficiente y decides implementarlo para este proposito.
+Se te encarga desarrollar un algoritmo para comprimir textos alfanumericos de hasta 5000 caracteres para guardarlos en un campo de una base de datos y recuperarlos en forma simple y
+eficiente. Te acuerdas que el algoritmo de Huffman genera un codigo que es muy eficiente y decides implementarlo para este proposito. Entrada: un archivo con los sımbolos a codificar y su frecuencia.
 
+Buscaremos implementar los siguientes algoritmos:
+- Algoritmo codicioso para producir el codigo de Huffman
+- Algoritmo para codificar el texto de entrada
+- Algoritmo para decodificar un texto codificado
 
+Algoritmo de Huffman
+
+El algoritmo de Huffman provee un método que permite comprimir información mediante la recodifi cación de los bytes que la componen. En particular, si los bytes que se van a
+comprimir están almacenados en un archivo, al recodifi carlos con secuencias de bits más cortas diremos que lo comprimimos. La técnica consiste en asignar a cada byte del archivo que vamos a comprimir un código binario compuesto por una cantidad de bits tan corta como sea posible. Esta cantidad será variable y dependerá de la probabilidad de ocurrencia del byte. Los códigos binarios que utilizaremos para reemplazar a cada byte del archivo original se llaman “códigos Huffman”. 
+
+Para obtener estas combinaciones de bits únicas, el algoritmo de Huffman propone seguir una serie de pasos a través de los cuales obtendremos un árbol binario llamado “arbol Huffman”. Luego, las hojas del árbol representarán a los diferentes caracteres que aparecen en el archivo y los caminos que se deben recorrer para llegar a esas hojas representarán la nueva codificación del carácter. 
+
+El algoritmo codicioso para producir el código de Huffman consiste en construir un árbol binario de forma iterativa, combinando los dos nodos (o árboles) de menor frecuencia hasta que solo quede uno. En cada paso, se unen los dos nodos con las frecuencias más bajas, se les asigna un 0 y un 1 en sus ramas y se reemplazan por un nuevo nodo padre cuya frecuencia es la suma de las frecuencias de los dos nodos unidos.
 
 
