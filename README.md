@@ -80,7 +80,7 @@ El algoritmo codicioso para producir el código de Huffman consiste en construir
 Primero debemos contar la cantidad de ocurrencias de cada caracter, en este caso, la segunda linea de entrada nos indica las veces que se repite cada caracter en la primera linea, por lo tanto, haremos uso de una tabla para indicar la correspondencia a cada caracter. Conociendo la cantidad de ocurrencias de cada carácter, tenemos que crear una lista enlazada y ordenada ascendentemente por dicha cantidad. Primero los caracteres menos frecuentes y luego los que tienen mayor probabilidad de aparecer y, si dos caracteres ocurren igual cantidad de veces, entonces colocaremos primero al que tenga menor valor numérico.
 
 Vamos a generar el árbol Huffman tomando “de a pares” los nodos de la lista. Esto lo haremos de la siguiente manera: sacamos los dos primeros nodos y los utilizamos para
-crear un pequeño árbol binario cuya raíz será un nuevo nodo que identificaremos con un carácter ficticio *1 (léase “asterisco uno”) y una cantidad de ocurrencias igual a la
+crear un pequeño árbol binario cuya raíz será un nuevo nodo que identificaremos con un carácter ficticio *1 y una cantidad de ocurrencias igual a la
 suma de las cantidades de los dos nodos que estamos procesando. En la rama derecha colocamos al nodo menos ocurrente (el primero); el otro nodo lo colocaremos en la rama
 izquierda. Luego insertamos en la lista al nuevo nodo (raíz) respetando el criterio de ordenamiento que mencionamos más arriba. Si en la lista existe un nodo con la misma cantidad de ocurrencias (que en este caso es 2), la inserción la haremos a continuación de este. 
 
@@ -92,4 +92,4 @@ que se debe recorrer para llegar a cada hoja. El código se forma concatenando u
 
 ### Resultados
 
-Los resultados se pueden obtener mediante las clases "GeneradosArchivosHuffman.py" que te arroja un archivo de texto en el orden en el que el proyecto lo pide, el cual se puede leer por media de la clase "Huffman.py". 
+Los resultados se pueden obtener mediante las clases "GeneradosArchivosHuffman.py" que te arroja un archivo de texto en el orden en el que el proyecto lo pide, el cual se puede leer por medio de la clase "Huffman.py". 
