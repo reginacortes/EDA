@@ -89,3 +89,7 @@ queremos comprimir.
 
 El siguiente paso será asignar un código Huffman a cada uno de los caracteres reales que se encuentran ubicados en las hojas del árbol. Para esto, consideraremos el camino
 que se debe recorrer para llegar a cada hoja. El código se forma concatenando un 0 por cada tramo que avanzamos hacia la izquierda y un 1 cada vez que avanzamos hacia la derecha.
+
+### Resultados
+
+Los resultados se pueden obtener mediante las clases "GeneradosArchivosHuffman.py" que te arroja un archivo de texto en el orden en el que el proyecto lo pide, el cual se puede leer por media de la clase "Huffman.py". 
