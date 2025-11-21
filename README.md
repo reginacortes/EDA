@@ -90,6 +90,36 @@ queremos comprimir.
 El siguiente paso será asignar un código Huffman a cada uno de los caracteres reales que se encuentran ubicados en las hojas del árbol. Para esto, consideraremos el camino
 que se debe recorrer para llegar a cada hoja. El código se forma concatenando un 0 por cada tramo que avanzamos hacia la izquierda y un 1 cada vez que avanzamos hacia la derecha.
 
+NodoHuffman
+
+Representa un nodo dentro del árbol de Huffman. Puede ser un nodo hoja o un nodo interno. Almacena un símbolo y su frecuencia. Guarda referencias a los nodos izquierdo y derecho. Permite saber si es hoja.
+
+
+DatosHuffman
+
+Es una clase contenedora que almacena la información leída del archivo. Guarda el arreglo de símbolos, la lista de frecuencias asociadas y el texto que se va a codificar.
+
+LectorArchivosHuffman
+ Lee el archivo de entrada.
+
+ArbolHuffman
+
+Construye el árbol de Huffman y genera el diccionario de códigos. Crea la cola de prioridad con cada símbolo y su frecuencia, combina nodos hasta formar el árbol binario de Huffman y recorre el árbol y asigna los códigos binarios a cada símbolo (usando 0 para izquierda y 1 para derecha).
+
+CodificadorHuffman
+
+Convierte el texto original en una cadena de bits usando los códigos generados. Recibe el texto original, reemplaza cada carácter con su código correspondiente y
+devuelve el texto codificado como un string de 0s y 1s.
+
+DecodificadorHuffman
+
+Reconstruye el texto original a partir del texto binario codificado. Recorre el árbol de Huffman siguiendo los bits del mensaje, cada que llega a un nodo hoja, recupera el símbolo original, y reconstruye el texto exactamente como era antes.
+
+MainHuffman
+
+Es el programa principal que ejecuta todo el proceso.
+
+
 ### Resultados
 
 Los resultados se pueden obtener mediante las clases "GeneradosArchivosHuffman.py" que te arroja un archivo de texto en el orden en el que el proyecto lo pide, el cual se puede leer por medio de la clase "Huffman.py". 
