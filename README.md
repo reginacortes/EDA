@@ -51,6 +51,17 @@ Gráfica - Método Recursivo
 
 Como podemos observar en ésta gráfica, unicamente contamos con los datos de la diferencia entre cadenas de longitud 5, aquellas cadenas con longitud mayor e igual a 50, en el método recursivo, hacen que el algoritmo tenga que resolver demasiadas operaciones por lo que el programa se tarda en terminar. Éste comportamiento confirma que la recursión si funciona pero es complicado ejecutarla en textos grandes y para resolver esto se necesita implementar memoización o programación dinámica. 
 
+
+
+
+Gráfica - Método con Memoización
+
+
+<img width="600" height="371" alt="Distancia entre Cadenas and Tiempo de ejecución (1)" src="https://github.com/user-attachments/assets/92f2f1e7-6333-4e7f-9ebd-e93bcc3b9438" />
+
+
+
+
 Gráfica - Método Iterativo
 
 <img width="600" height="371" alt="Versión Iterativa_ Distancia de Edición  and Tiempo" src="https://github.com/user-attachments/assets/8f4c852c-8a17-408e-866c-0a97d8016393" />
