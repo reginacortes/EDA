@@ -77,7 +77,9 @@ public class DistanciaEdiciónMemoizacion {
             insercion= memoRec(A, B, i, j-1, memo)+delta;
             eliminacion= memoRec(A,B, i-1, j, memo) + delta;
             reemplazo= memoRec(A, B, i-1, j-1, memo)+alfa;
-            memo[i][j]= Math.min(insercion, Math.min(eliminacion, eliminacion));       
+
+            memo[i][j] = Math.min(insercion, Math.min(eliminacion, reemplazo));
+
         }
         return memo[i][j];
     }
